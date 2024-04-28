@@ -49,14 +49,21 @@ class Stack:
     def empty(self):
         return len(self.stack_elements) == 0
     
+
+    # here is the solution
 def reversed(arr):
     stack = Stack()
-    reversed_arr = []
 
+    # create an empty array for storing the items from arr
+    reversed_arr = [] 
+
+    # put the items from arr in the stack using push method defined earlier
     for item in arr:
         stack.push(item)
 
+    # remove them putting them in the empty array created ealier
     while not stack.empty():
         reversed_arr.append(stack.pop())
     
+    # return the filled array
     return reversed_arr
