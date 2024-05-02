@@ -68,21 +68,3 @@ def reversed(arr):
     # return the filled array
     return reversed_arr
 
-# Write a function nse that gets an integer array and returns an array that contains the nearest smaller element of each element (to the left). If there is no smaller element to the left of an element, return -1.
-
-# Use stack to solve this problem!
-
-def nse(n):
-    stack2 = Stack()
-    result = []
-
-    for num in n:
-        while not stack2.empty and stack2.top >= num:
-            stack2.pop()
-
-        if stack2.empty():
-            result.append(-1)
-        else:
-            result.append(stack2.top())
-        stack2.push(num)
-    return result

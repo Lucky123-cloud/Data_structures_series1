@@ -23,6 +23,11 @@ class Stack:
         
     def empty(self):
         return len(self.stack_elements) == 0
+    
+
+    # Write a function nse that gets an integer array and returns an array that contains the nearest smaller element of each element (to the left). If there is no smaller element to the left of an element, return -1.
+
+# Use stack to solve this problem!
 
 def nse(n):
     stack2 = Stack()
