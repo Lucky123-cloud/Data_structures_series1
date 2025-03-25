@@ -1,0 +1,23 @@
+What is a Data Types?
+
+Two important things about data types:
+    1. Defines a certain domain if values.
+    2. Defines Operations allowed on those values
+
+
+What is a user defined Data Type?
+In constrast to primitive data types, there is a concept of user data types.
+The opeartions and values of user defined data types are not specified in the language itself but by the user
+Example: Structure, union and enumaration
+
+
+Abstract Data Types(ADT):
+Are like user defined data types which defines operations on values
+ using functions without specifying what 
+is there inside the function and how the operations are performed
+
+There are multiple ways to implement ADT, eg arrays, linked list
+The program which uses data structure is called a client program
+It has access to ADT ie Interface
+
+The program which implements the data structure is known as the implemenation
