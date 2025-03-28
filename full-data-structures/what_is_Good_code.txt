@@ -27,3 +27,24 @@ what is good code:
  here we are temped to say that the Big O of the function is O(n). However with the
  rule that we are having we have state the two Big O's both for the boxes and boxes2
  Hence this would be O(a + b) a - boxes and b - boxes2
+
+    4. Drop Non dominants terms
+    example code:
+        function printAllNumbersThenAllPairs(numbers) {
+            console.log('These are the numbers: ');
+            numbers.forEach(function(number) {
+                console.log(number);
+            });
+
+            console.log('and these are their sums: ');
+            numbers.forEach(function(firstNumber) {
+                numbers.forEach(function(secondNumber) {
+                    console.log(firstNumber + secondNumber);
+                });
+            });
+        }
+    what is the big O here:
+    we probabaly would start with O(n + n^2);
+    So what do we think this would be? Think about our rule number 4:
+    What would be the dorminant value here:
+    Probably O(n^2) - it is the more dorminant one.
