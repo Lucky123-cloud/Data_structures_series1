@@ -1,0 +1,17 @@
+A good as far as we have covered should have the following things:
+1. Readable
+2. Scalable.
+
+However under being Scalable we actually look at 2 things:
+ - Speed - which we have covered with Big o(Time complexity)
+ - Memory - We need to use small space while creating programs(Space complexity)
+
+ we will cover space complexity:
+ has two main things:
+ Heap - where we keep our variable that we assign
+ stack - Where we track our function calls
+   what causes space complexity?
+    - variable
+    - Data Structures
+    - Function calls
+    - Allocations
