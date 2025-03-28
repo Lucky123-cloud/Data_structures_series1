@@ -12,4 +12,18 @@ what is good code:
   - Always think of worst case scenario
  2. Remove constant
   - Say the Big O of a particular function is O(1 + n/2 + 100), we reduce it to O(n) we drop the constants.
- 3.  
+ 3.  Different terms for inputs
+ example code:
+ function compressBoxesTwice(boxes, boxes2) {
+    boxes.forEach(function(boxes) {
+        console.log(boxes)
+    });
+
+    boxes2.forEach(function(boxes) {
+        console.log(boxes);
+    });
+ }
+
+ here we are temped to say that the Big O of the function is O(n). However with the
+ rule that we are having we have state the two Big O's both for the boxes and boxes2
+ Hence this would be O(a + b) a - boxes and b - boxes2
