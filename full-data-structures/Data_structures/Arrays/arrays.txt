@@ -1,0 +1,6 @@
+They organize data sequatially
+They are stored in contigous memory - That menas they are stored in order
+lookup(access) = O(1);
+Push = O(1);
+Insert = O(n);
+delete = O(n);
