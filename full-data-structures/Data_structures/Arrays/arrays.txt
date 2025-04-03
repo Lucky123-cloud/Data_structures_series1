@@ -4,3 +4,12 @@ lookup(access) = O(1);
 Push = O(1);
 Insert = O(n);
 delete = O(n);
+
+Types of arrays
+- Static Arrays - They are fixed in size.
+- Dynamic arrays - Allow us to copy and rebuild an array at a new location with more memory is we wanted more memory.
+    - lookup = O(1);
+    - Append* = O(1); can be O(n) sometimes
+    - insert = O(n);
+    - Delete = O(n);
+- JS automatically uses Dynamic array
