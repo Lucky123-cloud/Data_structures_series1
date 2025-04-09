@@ -13,3 +13,21 @@ Types of arrays
     - insert = O(n);
     - Delete = O(n);
 - JS automatically uses Dynamic array
+
+
+
+Objects
+- Reference Types
+- Context
+- instantiation
+
+
+pro to arrays:
+- fast lookups
+- Fast push/pop
+- Ordered
+
+cons to arrays:
+- Slow inserts
+- Slow deletes
+- Fixed size* if using static arrays
