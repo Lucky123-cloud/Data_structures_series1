@@ -1,0 +1,7 @@
+Linear Search is the simplest searching algorithm.
+
+You go through each element in the array one by one.
+
+If the element matches the target (the one you’re searching for), return its index.
+
+If you reach the end and don’t find it, return -1 (meaning not found).
