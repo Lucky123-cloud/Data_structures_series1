@@ -1,0 +1,12 @@
+-Its a divide and conquer
+
+How it Works:
+ - Choosing a pivot element from an arrays
+ - Partitioning the array into two parts 
+        . Element smaller than (or equal to) the pivot
+        . Elements greater than the pivot
+
+ - recursively sorting the two partions
+ - Average time complexity O(n log n)
+ - Worst case: O(n^2) 
+ - Space complexity: O(log n) due to recursion stack
