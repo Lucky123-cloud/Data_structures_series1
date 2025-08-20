@@ -1,0 +1,16 @@
+Buble sort makes it easier to arrange things into where they are supposed to be in the order they should be. At the end of the sorting the largest is at it's own place and the smallest is at it's own place
+
+Time complexity:
+ -> Worst case: O(n^2)
+ -> Best case(Already sorted): O(n) with early exit optimization
+
+ When to use: Teaching, tiny arrays, or arrays that are almost sorted
+
+ Core Idea(In plain steps)
+ 1. Loop over the arrays multiple times
+ 2. On each pass, compare items arr[j] and arr[j + 1].
+ 3. If they're out of order, swap.
+ 4. After pass, i, the last i items, are in final position - so the inner loop can stop earlier each time
+
+
+ 
