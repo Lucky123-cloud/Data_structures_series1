@@ -1,0 +1,26 @@
+Binary Search is an efficient searching algorithm that works on sorted arrays.
+
+Instead of checking elements one by one (like linear search), it repeatedly divides the search range by 2.
+
+This makes it much faster than linear search for large datasets.
+
+🔎 How it works (Step-by-Step)
+
+Suppose we want to search for 8 in [2, 4, 6, 8, 10, 12].
+
+Start with the whole array
+left = 0, right = arr.length - 1
+
+Find the middle element
+mid = Math.floor((left + right) / 2)
+→ Check if arr[mid] === target.
+
+Compare target with middle
+
+If target === arr[mid], ✅ found.
+
+If target < arr[mid], search the left half.
+
+If target > arr[mid], search the right half.
+
+Repeat until found or left > right.
