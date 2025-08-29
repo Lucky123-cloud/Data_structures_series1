@@ -19,4 +19,12 @@ function quickSort(arr) {
 const array = [34, 7, 23, 32, 5, 62];
 console.log(quickSort(array)); // Output: [5, 7, 23, 32, 34, 62]
 
+//best case: O(n log n)
+//average case: O(n log n)
+//worst case: O(n^2)
+//space complexity: O(log n) due to recursion stack
+//stable: No
+//in place: No
+
+
 
