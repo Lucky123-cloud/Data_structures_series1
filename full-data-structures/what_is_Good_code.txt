@@ -5,7 +5,7 @@ what is good code:
 2. Scalable code(using of big O notation to scale the code)
  - We use the number of operations an algorithm takes to run rather than the time the algorithm takes to run.
  - We do not use TIME, since time is a factor affecting the CPU and not an algorithm.
-
+ - Under Scalable - we actually check two things (speed/time complexity and Memory/space complexity).
 
  Rules of big O notation
  1. Worst case Scenario

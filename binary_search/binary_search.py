@@ -19,5 +19,5 @@ print(binary_search(my_list, 11));
 # binary search returns the position of the item being searched for
 # binary search returns None if the item is not there in the list
 # The list has to be sorted for binary search to be performed
-
+#Binary search uses log n 
 

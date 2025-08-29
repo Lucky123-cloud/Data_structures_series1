@@ -1,0 +1,8 @@
+Hash collions - Where keys hashed are stored in the same memory block(buckets)
+
+Hash collisons - reduces/ slows down reading and writting with the hash table with O(n/k)
+where K is the size of the hash function. This is the same as O(n).
+
+How to deal with collions:
+- Using LinkedList - separate chaining
+- Other methods are here: https://en.wikipedia.org/wiki/Hash_table

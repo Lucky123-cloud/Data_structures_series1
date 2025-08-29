@@ -1,0 +1,13 @@
+DS - Is a collection of values that have relationships among them or functions applied to them.
+
+How Computers Store Data:
+    - Variables are stored in RAM
+    - Storage we store Video files, music files, or doucuments(this is Slow)
+
+Operations on Data Structures:
+    - Insertion
+    - Deletion
+    - Traversal
+    - Searching
+    - Sorting
+    - Access

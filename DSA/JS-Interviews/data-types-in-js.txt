@@ -1,0 +1,14 @@
+Primitive:
+- number
+- string
+- boolean
+
+composite:
+- Arrays
+- Objects
+- Functions
+
+Trivial:
+- Null
+- Undefined
+

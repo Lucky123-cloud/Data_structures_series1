@@ -1,0 +1,24 @@
+Also called hashb tables, hash maps etc
+what does it mean? - hash tables has a key-value pair
+
+examples:
+    basket.grapes = 10000
+    grapes - key
+    10000 - value
+
+
+hash function:
+    a function that generates a value of fixed length for each input that it gets.
+    idempotent - a function given an input always ouput the same output.
+    insert O(1)
+    lookup O(1)
+    Delete O(1)
+    Search O(1)
+
+pros of hash Tables:
+    https://www.cs.usfca.edu/~galles/visualization/OpenHash.html
+    collision - slows down reading and writing time {
+        How to solve it:
+            - Linked list - one way of solving it
+            - https://en.wikipedia.org/wiki/Hash_table - use this to solve the hashing
+    }
