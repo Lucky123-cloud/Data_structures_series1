@@ -1,23 +1,27 @@
-def binary_search(list, item):
-    low = 0;
-    high = len(list) - 1;
-    while low <= high:
-        mid = (low + high)
-        guess = list[mid]
-        if guess == item:
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
             return mid
-        if guess > mid:
-            high =  mid - 1
+        elif arr[mid] < target:
+            left = mid + 1
         else:
-            low = mid + 1
-    return None;
+            right = mid - 1
+    return -1
 
-my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-print(binary_search(my_list, 5));
-print(binary_search(my_list, 11));
 
-# binary search returns the position of the item being searched for
-# binary search returns None if the item is not there in the list
-# The list has to be sorted for binary search to be performed
-#Binary search uses log n 
 
+# Example usage::
+if __name__ == "__main__":
+    arr = [1, 2, 3, 3, 3, 4, 5]
+    target = 3
+    result = binary_search(arr, target)
+    print(f"Element found at index: {result}" if result != -1 else "Element not found")
+
+
+
+# Big O notation:
+# Time Complexity: O(log n)
+# Space Complexity: O(1)
