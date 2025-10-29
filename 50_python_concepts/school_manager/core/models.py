@@ -1,47 +1,40 @@
 from django.db import models
-from abc import ABC, abstractmethod
 
-# Create your models here.
-
-class Person(models.Model, ABC):
+# ---------- ABSTRACT BASE MODEL ----------
+class Person(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField()
 
     class Meta:
-        abstract = True  # This model will not create a database table
+        abstract = True  # ✅ Tells Django not to create a table for Person
 
-
+    # ENCAPSULATION (private variable)
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.__secret_code = "XYZ123"  # Private attribute
+        self.__secret_code = "XYZ123"  # private
 
-
+    # Getter and Setter
     def get_secret_code(self):
         return self.__secret_code
-    
 
     def set_secret_code(self, code):
         self.__secret_code = code
 
-
-    @abstractmethod
+    # “Abstract-like” method (raise error if not overridden)
     def introduce(self):
-        pass
+        raise NotImplementedError("Subclasses must implement introduce()")
 
 
-
-# INHERITANCE
+# ---------- INHERITANCE + POLYMORPHISM ----------
 class Student(Person):
     grade = models.CharField(max_length=10)
 
-    # POLYMORPHISM - Overriding the introduce method
     def introduce(self):
-        return f"Hi, I'm {self.name}, a student in grade {self.grade}."
-    
+        return f"I am {self.name}, a student in grade {self.grade}."
+
 
 class Teacher(Person):
-    subject = models.CharField(max_length=100)
+    subject = models.CharField(max_length=50)
 
-    # POLYMORPHISM - Overriding the introduce method
     def introduce(self):
-        return f"Hello, I'm {self.name}, and I teach {self.subject}."
+        return f"I am {self.name}, and I teach {self.subject}."
