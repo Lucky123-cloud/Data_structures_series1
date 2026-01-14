@@ -1,1 +1,0 @@
-Lists are ordered, mutable and allow duplicates

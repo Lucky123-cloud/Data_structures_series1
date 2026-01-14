@@ -1,5 +1,0 @@
-Functions in python are fast-class citizens, because they:
-- can be passed as arguments
-- can be assigned to variables
-- can be returned from other Functions
-
