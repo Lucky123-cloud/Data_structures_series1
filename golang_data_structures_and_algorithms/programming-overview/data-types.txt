@@ -1,0 +1,19 @@
+1. Boolean : These used to store True or False.
+Ex: var B bool = true
+2. Integer: Int or Integer represent whole numbers. Integer can be negative or
+positive. When an integral literal is assigned to a variable. There are
+various type of integers depending upon the number of bytes they contain
+and how much big data they can contain. The other variation of integers are
+int8, int16, int32 & int64.
+Ex: var I int = -1000
+3. Unsigned Integer: uint or Unsigned Integer are special type of integers,
+which can store only positive values. The other variation of integers are
+uint8, uint16, uint32 & uint64
+Ex: var j uint = 1000
+4. Float: Decimal point number are stored inside Floating Point variable.
+Ex: var f float32 = 1.2345
+5. Strings are sequences of Unicode characters. String are immutable.
+Ex: var s string = “Hello, World!”
+6. Byte are alias of uint8
+7. Rune are alias of int32 and are used to store Unicode characters.
+8. Complex are used to store complex number.
